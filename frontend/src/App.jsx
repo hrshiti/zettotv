@@ -1760,7 +1760,7 @@ function App() {
               {!isKeyboardOpen && (
                 <nav className="bottom-nav" style={{ justifyContent: 'space-around' }}>
                   <NavItem
-                    icon={<div style={{ display: 'flex', gap: 8, alignItems: 'center' }}><HomeIcon /> <span style={{ fontWeight: 800, letterSpacing: '0.5px' }}>InPlay</span></div>}
+                    icon={<div style={{ display: 'flex', gap: 8, alignItems: 'center' }}><HomeIcon /> <span style={{ fontWeight: 800, letterSpacing: '0.5px' }}>ZetoTV</span></div>}
                     label="Home"
                     active={activeTab === 'Home' && activeFilter !== 'Audio Series'}
                     onClick={() => handleTabChange('Home')}
@@ -2090,7 +2090,7 @@ function CategoryGridView({ activeFilter, setSelectedMovie, originalsData, trend
       >
         {/* Section Title */}
         <div className="section-header" style={{ marginBottom: '16px', marginTop: '16px' }}>
-          <h2 className="section-title">InPlay Originals</h2>
+          <h2 className="section-title">ZetoTV Originals</h2>
         </div>
 
         <div className="originals-grid">

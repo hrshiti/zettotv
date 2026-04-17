@@ -229,7 +229,7 @@ const PlanPage = () => {
           textAlign: 'center',
           boxShadow: 'inset 0 0 100px rgba(70, 211, 105, 0.05)'
         }}>
-          <h2 style={{ fontSize: '2rem', fontWeight: '800', marginBottom: '40px' }}>Wait... Why InPlay?</h2>
+          <h2 style={{ fontSize: '2rem', fontWeight: '800', marginBottom: '40px' }}>Wait... Why ZetoTV?</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '40px' }}>
             <div>
               <div style={{ width: '60px', height: '60px', background: 'rgba(70, 211, 105, 0.1)', borderRadius: '20px', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 20px' }}>
@@ -258,7 +258,7 @@ const PlanPage = () => {
         {/* Footer info */}
         <div style={{ textAlign: 'center', padding: '40px 0', color: '#6B7280', fontSize: '0.85rem' }}>
           <p>Recurring billing. Cancel anytime. Offer valid for new customers only.</p>
-          <p>© 2026 InPlay OTT Platform. All rights reserved.</p>
+          <p>© 2026 ZetoTV OTT Platform. All rights reserved.</p>
         </div>
       </div>
     </div>

@@ -229,7 +229,7 @@ function ReelItem({
             try {
                 await navigator.share({
                     title: reel.title,
-                    text: `Watch ${reel.title} on InPlay!`,
+                    text: `Watch ${reel.title} on ZetoTV!`,
                     url: window.location.href
                 });
             } catch (err) {
@@ -325,7 +325,7 @@ function ReelItem({
                 <div style={{ display: 'flex', alignItems: 'center', marginBottom: '8px' }}>
                     {/* Placeholder Avatar if none */}
                     <img src={getImageUrl(reel.thumbnail?.url) || 'https://via.placeholder.com/40'} alt="User" style={{ width: '40px', height: '40px', borderRadius: '50%', marginRight: '10px', border: '2px solid white' }} />
-                    <h4 style={{ margin: 0 }}>InPlay Official</h4>
+                    <h4 style={{ margin: 0 }}>ZetoTV Official</h4>
                 </div>
                 <p style={{ margin: '0 0 10px 0', fontSize: '0.9rem', lineHeight: '1.4' }}>{reel.title} {reel.description}</p>
                 {reel.audio && (
@@ -484,7 +484,7 @@ const CommentsSheet = ({ reelId, onClose }) => {
                 <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '2px' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                         <span style={{ fontWeight: '700', fontSize: isReply ? '0.8rem' : '0.9rem', color: '#1a1a1a' }}>
-                            {comment.user?.name || 'InPlay User'}
+                            {comment.user?.name || 'ZetoTV User'}
                         </span>
                         <span style={{ color: '#aeaeae', fontWeight: '400', fontSize: '0.7rem' }}>
                             {new Date(comment.createdAt).toLocaleDateString(undefined, { month: 'short', day: 'numeric' })}

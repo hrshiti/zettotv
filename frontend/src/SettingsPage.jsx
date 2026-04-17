@@ -851,7 +851,7 @@ export default function SettingsPage({ onLogout, currentUser, onUpdateUser }) {
                                     <p style={{ marginBottom: '16px' }}>Last updated: {appSettings?.privacyPolicy?.lastUpdated ? new Date(appSettings.privacyPolicy.lastUpdated).toLocaleDateString() : 'January 2026'}</p>
                                     <div
                                         style={{ whiteSpace: 'pre-wrap' }}
-                                        dangerouslySetInnerHTML={{ __html: appSettings?.privacyPolicy?.content || 'InPlay ("we", "our", or "us") is committed to protecting your privacy...' }}
+                                        dangerouslySetInnerHTML={{ __html: appSettings?.privacyPolicy?.content || 'ZetoTV ("we", "our", or "us") is committed to protecting your privacy...' }}
                                     />
                                 </div>
                             )}
@@ -870,7 +870,7 @@ export default function SettingsPage({ onLogout, currentUser, onUpdateUser }) {
                                         margin: '0 auto 24px',
                                         boxShadow: '0 8px 32px rgba(255, 77, 77, 0.3)'
                                     }}>
-                                        <div style={{ color: 'white', fontSize: '2rem', fontWeight: '900 italic' }}>IP</div>
+                                        <div style={{ color: 'white', fontSize: '2rem', fontWeight: '900 italic' }}>ZT</div>
                                     </div>
                                     <h3 style={{ fontSize: '1.5rem', fontWeight: '800', marginBottom: '8px' }}>ZetoTV</h3>
                                     <p style={{ color: '#666', marginBottom: '32px' }}>Version {appSettings?.aboutInPlay?.version || '2.4.0 (Stable Build)'}</p>
@@ -887,15 +887,15 @@ export default function SettingsPage({ onLogout, currentUser, onUpdateUser }) {
                                         <div style={{ height: '1px', background: 'rgba(255,255,255,0.05)' }}></div>
                                         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                                             <span style={{ color: '#555' }}>Website</span>
-                                            <a href={`https://${appSettings?.aboutInPlay?.website}`} target="_blank" rel="noreferrer" style={{ color: '#ff4d4d', textDecoration: 'none' }}>{appSettings?.aboutInPlay?.website || 'www.inplay.com'}</a>
+                                            <a href={`https://${appSettings?.aboutInPlay?.website}`} target="_blank" rel="noreferrer" style={{ color: '#ff4d4d', textDecoration: 'none' }}>{appSettings?.aboutInPlay?.website || 'www.zetotv.com'}</a>
                                         </div>
                                         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                                             <span style={{ color: '#555' }}>Twitter</span>
-                                            <a href={`https://twitter.com/${appSettings?.aboutInPlay?.twitter?.replace('@', '')}`} target="_blank" rel="noreferrer" style={{ color: '#ff4d4d', textDecoration: 'none' }}>{appSettings?.aboutInPlay?.twitter || '@InPlayHQ'}</a>
+                                            <a href={`https://twitter.com/${appSettings?.aboutInPlay?.twitter?.replace('@', '')}`} target="_blank" rel="noreferrer" style={{ color: '#ff4d4d', textDecoration: 'none' }}>{appSettings?.aboutInPlay?.twitter || '@ZetoTVHQ'}</a>
                                         </div>
                                         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                                             <span style={{ color: '#555' }}>Instagram</span>
-                                            <a href={`https://instagram.com/${appSettings?.aboutInPlay?.instagram?.replace('@', '')}`} target="_blank" rel="noreferrer" style={{ color: '#ff4d4d', textDecoration: 'none' }}>{appSettings?.aboutInPlay?.instagram || '@inplay_official'}</a>
+                                            <a href={`https://instagram.com/${appSettings?.aboutInPlay?.instagram?.replace('@', '')}`} target="_blank" rel="noreferrer" style={{ color: '#ff4d4d', textDecoration: 'none' }}>{appSettings?.aboutInPlay?.instagram || '@zetotv_official'}</a>
                                         </div>
                                     </div>
                                     <p style={{ color: '#333', fontSize: '0.75rem', marginTop: '40px' }}>&copy; {new Date().getFullYear()} ZetoTV Entertainment Records Inc.<br />All rights reserved.</p>

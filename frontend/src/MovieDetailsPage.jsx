@@ -302,7 +302,7 @@ export default function MovieDetailsPage({
                             try {
                                 await navigator.share({
                                     title: displayMovie.title,
-                                    text: `Check out ${displayMovie.title} on InPlay!`,
+                                    text: `Check out ${displayMovie.title} on ZetoTV!`,
                                     url: window.location.href
                                 });
                             } catch (error) {

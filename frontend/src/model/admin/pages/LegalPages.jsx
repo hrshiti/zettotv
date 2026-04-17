@@ -101,7 +101,7 @@ export default function LegalPages() {
     const tabs = [
         { id: 'help', label: 'Help Center' },
         { id: 'privacy', label: 'Privacy Policy' },
-        { id: 'about', label: 'About InPlay' }
+        { id: 'about', label: 'About ZetoTV' }
     ];
 
     return (
@@ -269,7 +269,7 @@ export default function LegalPages() {
                     </div>
                 )}
 
-                {/* ABOUT INPLAY */}
+                {/* ABOUT ZETOTV (Previously InPlay) */}
                 {activeTab === 'about' && (
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
                         <div>
