@@ -239,7 +239,7 @@ export default function Signup({ onClose, onSwitchToLogin, onSignupSuccess }) {
               whileTap={{ scale: 0.98 }}
               style={{
                 width: '100%',
-                background: '#ff4d4d',
+                background: '#46d369',
                 color: 'white',
                 border: 'none',
                 borderRadius: '12px',
@@ -251,8 +251,8 @@ export default function Signup({ onClose, onSwitchToLogin, onSignupSuccess }) {
                 transition: 'all 0.3s ease',
                 marginBottom: '20px'
               }}
-              onMouseEnter={(e) => !isLoading && (e.target.style.backgroundColor = '#e63946')}
-              onMouseLeave={(e) => !isLoading && (e.target.style.backgroundColor = '#ff4d4d')}
+              onMouseEnter={(e) => !isLoading && (e.target.style.backgroundColor = '#3ea055')}
+              onMouseLeave={(e) => !isLoading && (e.target.style.backgroundColor = '#46d369')}
             >
               {isLoading ? 'Creating Account...' : 'Continue to Login'}
             </motion.button>
@@ -265,7 +265,7 @@ export default function Signup({ onClose, onSwitchToLogin, onSignupSuccess }) {
                   type="button"
                   onClick={onSwitchToLogin}
                   style={{
-                    color: '#ff4d4d',
+                    color: '#46d369',
                     background: 'none',
                     border: 'none',
                     fontSize: '0.9rem',
@@ -273,8 +273,8 @@ export default function Signup({ onClose, onSwitchToLogin, onSignupSuccess }) {
                     cursor: 'pointer',
                     textDecoration: 'underline'
                   }}
-                  onMouseEnter={(e) => e.target.style.color = '#e63946'}
-                  onMouseLeave={(e) => e.target.style.color = '#ff4d4d'}
+                  onMouseEnter={(e) => e.target.style.color = '#3ea055'}
+                  onMouseLeave={(e) => e.target.style.color = '#46d369'}
                 >
                   Sign in
                 </button>

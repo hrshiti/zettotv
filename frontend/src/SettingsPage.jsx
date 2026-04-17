@@ -193,7 +193,7 @@ export default function SettingsPage({ onLogout, currentUser, onUpdateUser }) {
             style={{
                 width: '48px',
                 height: '24px',
-                background: active ? '#ff4d4d' : '#333',
+                background: active ? '#46d369' : '#333',
                 borderRadius: '12px',
                 position: 'relative',
                 cursor: 'pointer',
@@ -260,15 +260,15 @@ export default function SettingsPage({ onLogout, currentUser, onUpdateUser }) {
                         <img
                             src={getImageUrl(userAvatar)}
                             alt="Profile"
-                            style={{ width: '70px', height: '70px', borderRadius: '50%', border: '2px solid #ff0000', objectFit: 'cover' }}
+                            style={{ width: '70px', height: '70px', borderRadius: '50%', border: '2px solid #46d369', objectFit: 'cover' }}
                         />
                     ) : (
                         <div style={{
                             width: '70px',
                             height: '70px',
                             borderRadius: '50%',
-                            border: '2px solid #ff0000',
-                            background: '#ff0a16',
+                            border: '2px solid #46d369',
+                            background: '#3ea055',
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'center'
@@ -422,7 +422,7 @@ export default function SettingsPage({ onLogout, currentUser, onUpdateUser }) {
                                     style={{
                                         background: 'transparent',
                                         border: 'none',
-                                        color: '#ff4d4d',
+                                        color: '#46d369',
                                         fontWeight: '700',
                                         fontSize: '1rem',
                                         opacity: isSaving ? 0.5 : 1
@@ -496,7 +496,7 @@ export default function SettingsPage({ onLogout, currentUser, onUpdateUser }) {
                                                     position: 'absolute',
                                                     bottom: '4px',
                                                     right: '4px',
-                                                    background: '#ff4d4d',
+                                                    background: '#46d369',
                                                     padding: '8px',
                                                     borderRadius: '50%',
                                                     border: '4px solid #0a0a0a',
@@ -504,7 +504,7 @@ export default function SettingsPage({ onLogout, currentUser, onUpdateUser }) {
                                                     display: 'flex',
                                                     alignItems: 'center',
                                                     justifyContent: 'center',
-                                                    boxShadow: '0 4px 12px rgba(255, 77, 77, 0.4)'
+                                                    boxShadow: '0 4px 12px rgba(70, 211, 105, 0.4)'
                                                 }}
                                             >
                                                 <User size={18} color="white" />
@@ -758,16 +758,16 @@ export default function SettingsPage({ onLogout, currentUser, onUpdateUser }) {
                                                 alignItems: 'center',
                                                 justifyContent: 'space-between',
                                                 padding: '20px',
-                                                background: selectedLanguage === lang.split(' ')[0] ? 'rgba(255, 77, 77, 0.1)' : 'rgba(255,255,255,0.03)',
+                                                background: selectedLanguage === lang.split(' ')[0] ? 'rgba(70, 211, 105, 0.1)' : 'rgba(255,255,255,0.03)',
                                                 borderRadius: '16px',
-                                                border: `1px solid ${selectedLanguage === lang.split(' ')[0] ? 'rgba(255, 77, 77, 0.2)' : 'rgba(255,255,255,0.02)'}`,
+                                                border: `1px solid ${selectedLanguage === lang.split(' ')[0] ? 'rgba(70, 211, 105, 0.2)' : 'rgba(255,255,255,0.02)'}`,
                                                 cursor: 'pointer'
                                             }}
                                         >
                                             <span style={{
                                                 fontSize: '1rem',
                                                 fontWeight: selectedLanguage === lang.split(' ')[0] ? '700' : '500',
-                                                color: selectedLanguage === lang.split(' ')[0] ? '#ff4d4d' : 'white'
+                                                color: selectedLanguage === lang.split(' ')[0] ? '#46d369' : 'white'
                                             }}>
                                                 {lang}
                                             </span>
@@ -887,7 +887,7 @@ export default function SettingsPage({ onLogout, currentUser, onUpdateUser }) {
                                         <div style={{ height: '1px', background: 'rgba(255,255,255,0.05)' }}></div>
                                         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                                             <span style={{ color: '#555' }}>Website</span>
-                                            <a href={`https://${appSettings?.aboutInPlay?.website}`} target="_blank" rel="noreferrer" style={{ color: '#ff4d4d', textDecoration: 'none' }}>{appSettings?.aboutInPlay?.website || 'www.zetotv.com'}</a>
+                                            <a href={`https://${appSettings?.aboutInPlay?.website}`} target="_blank" rel="noreferrer" style={{ color: '#46d369', textDecoration: 'none' }}>{appSettings?.aboutInPlay?.website || 'www.zetotv.com'}</a>
                                         </div>
                                         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                                             <span style={{ color: '#555' }}>Twitter</span>

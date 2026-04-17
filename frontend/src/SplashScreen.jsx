@@ -74,7 +74,7 @@ export default function SplashScreen() {
                     style={{
                         width: '400px', // Increased size as requested
                         objectFit: 'contain',
-                        filter: 'drop-shadow(0 0 20px rgba(229, 9, 20, 0.3))'
+                        filter: 'drop-shadow(0 0 20px rgba(70, 211, 105, 0.3))'
                     }}
                     animate={{
                         filter: [

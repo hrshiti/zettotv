@@ -149,7 +149,7 @@ export default function Login({ onClose, onSwitchToSignup, onLoginSuccess }) {
                       transition: 'all 0.3s ease'
                     }}
                     onFocus={(e) => {
-                      e.target.style.borderColor = '#ff0a16';
+                      e.target.style.borderColor = '#46d369';
                       e.target.style.background = '#2a2a2a';
                     }}
                     onBlur={(e) => {
@@ -185,7 +185,7 @@ export default function Login({ onClose, onSwitchToSignup, onLoginSuccess }) {
                       transition: 'all 0.3s ease'
                     }}
                     onFocus={(e) => {
-                      e.target.style.borderColor = '#ff0a16';
+                      e.target.style.borderColor = '#46d369';
                       e.target.style.background = '#2a2a2a';
                     }}
                     onBlur={(e) => {
@@ -238,7 +238,7 @@ export default function Login({ onClose, onSwitchToSignup, onLoginSuccess }) {
               whileTap={{ scale: 0.98 }}
               style={{
                 width: '100%',
-                background: '#ff0a16',
+                background: '#46d369',
                 color: 'white',
                 border: 'none',
                 borderRadius: '16px',
@@ -249,7 +249,7 @@ export default function Login({ onClose, onSwitchToSignup, onLoginSuccess }) {
                 opacity: isLoading ? 0.7 : 1,
                 transition: 'all 0.3s ease',
                 marginBottom: '24px',
-                boxShadow: '0 8px 24px rgba(255, 10, 22, 0.3)'
+                boxShadow: '0 8px 24px rgba(70, 211, 105, 0.3)'
               }}
             >
               {isLoading ? 'Please wait...' : (step === 1 ? 'Request OTP' : 'Verify & Login')}
@@ -281,7 +281,7 @@ export default function Login({ onClose, onSwitchToSignup, onLoginSuccess }) {
                   type="button"
                   onClick={onSwitchToSignup}
                   style={{
-                    color: '#ff0a16',
+                    color: '#46d369',
                     background: 'none',
                     border: 'none',
                     fontSize: '0.95rem',
