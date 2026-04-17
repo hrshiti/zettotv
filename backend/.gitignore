@@ -1,0 +1,10 @@
+node_modules
+.env
+.DS_Store
+*.log
+
+# Uploaded media files (stored locally)
+uploads/
+
+# Firebase credentials
+config/inplay-43123-firebase-adminsdk-fbsvc-f938162894.json

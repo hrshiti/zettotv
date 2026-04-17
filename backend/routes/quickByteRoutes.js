@@ -1,0 +1,23 @@
+const express = require('express');
+const router = express.Router();
+const quickByteController = require('../controllers/quickByteController');
+const { protect, authorize, subscribed } = require('../middlewares/auth');
+
+// Public routes (for user side)
+router.get('/', quickByteController.getAllQuickBytes);
+router.get('/:id/comments', quickByteController.getComments);
+router.post('/:id/view', quickByteController.incrementViews);
+
+// Protected User routes
+router.post('/:id/like', protect, subscribed, quickByteController.toggleLike);
+router.post('/:id/comments', protect, subscribed, quickByteController.addComment);
+router.delete('/comments/:id', protect, subscribed, quickByteController.deleteComment);
+router.post('/comments/:id/like', protect, subscribed, quickByteController.toggleCommentLike);
+
+// Protected Admin routes
+router.post('/', protect, authorize('admin', 'superadmin'), quickByteController.createQuickByte);
+router.get('/:id', protect, authorize('admin', 'superadmin'), quickByteController.getQuickByteById);
+router.put('/:id', protect, authorize('admin', 'superadmin'), quickByteController.updateQuickByte);
+router.delete('/:id', protect, authorize('admin', 'superadmin'), quickByteController.deleteQuickByte);
+
+module.exports = router;
