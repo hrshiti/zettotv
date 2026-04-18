@@ -53,11 +53,11 @@ app.use(compression());
 
 // CORS configuration (MUST BE BEFORE LIMITER)
 const allowedOrigins = [
-  'https://inplay-two.vercel.app',
-  'http://localhost:5173',
+
+
+
+  'http://localhost:5174',
   'http://localhost:3000',
-  'https://inplays.in',
-  'https://www.inplays.in',
   "https://zetotvv.appzetodemo.com"
 ];
 

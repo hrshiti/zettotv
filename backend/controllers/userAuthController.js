@@ -372,8 +372,8 @@ const saveFCMToken = async (req, res) => {
     res.status(400).json({ success: false, message: error.message });
   }
 };
-
-// @desc    Remove FCM token
+//
+// @desc    Remove FCMwefbwm token
 // @route   DELETE /api/user/auth/fcm-token
 // @access  Private
 const removeFCMToken = async (req, res) => {

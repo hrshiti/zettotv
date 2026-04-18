@@ -7,16 +7,20 @@ dotenv.config();
 let serviceAccount;
 
 try {
-    if (process.env.NODE_ENV === 'production' && process.env.FIREBASE_SERVICE) {
-        // In production, use the JSON string from environment variable
-        serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE);
+    const serviceAccountJson = process.env.FIREBASE_SERVICE_ACCOUNT || process.env.FIREBASE_SERVICE;
+
+    if (serviceAccountJson) {
+        // Use the JSON string from environment variable
+        serviceAccount = JSON.parse(serviceAccountJson);
+        console.log('Firebase initialized using environment variable');
     } else {
-        // In development, use the file path
-        const serviceAccountPath = process.env.FIREBASE_SERVICE_ACCOUNT_PATH || './config/inplay-43123-firebase-adminsdk-fbsvc-f938162894.json';
+        // Use the file path
+        const serviceAccountPath = process.env.FIREBASE_SERVICE_ACCOUNT_PATH || './config/zetotvv-firebase-adminsdk.json';
         const absolutePath = path.isAbsolute(serviceAccountPath)
             ? serviceAccountPath
             : path.join(__dirname, '..', serviceAccountPath);
         serviceAccount = require(absolutePath);
+        console.log('Firebase initialized using service account file');
     }
 
     admin.initializeApp({
