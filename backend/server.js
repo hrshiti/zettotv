@@ -220,7 +220,9 @@ app.get("/test-upload", (req, res) => {
 app.use('*', (req, res) => {
   res.status(404).json({
     success: false,
-    message: 'Route not found'
+    message: `Route not found: ${req.originalUrl}`,
+    method: req.method,
+    path: req.originalUrl
   });
 });
 
