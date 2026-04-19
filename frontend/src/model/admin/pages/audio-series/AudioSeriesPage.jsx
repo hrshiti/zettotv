@@ -5,7 +5,7 @@ import { getImageUrl } from '../../../../utils/imageUtils';
 import { useNavigate, useParams, useLocation } from 'react-router-dom';
 
 // --- API Service ---
-const rawApiUrl = import.meta.env.VITE_API_BASE_URL || 'https://api.inplays.in/api';
+const rawApiUrl = import.meta.env.VITE_API_BASE_URL || 'https://zetotv.appzetodemo.com/api';
 const BASE_URL = rawApiUrl.replace(/\/$/, '').endsWith('/api')
     ? rawApiUrl.replace(/\/$/, '')
     : `${rawApiUrl.replace(/\/$/, '')}/api`;

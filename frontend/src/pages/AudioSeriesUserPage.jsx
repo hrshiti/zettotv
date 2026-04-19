@@ -5,7 +5,7 @@ import { getImageUrl } from '../utils/imageUtils';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAudioPlayer } from '../contexts/AudioPlayerContext';
 
-const rawApiUrl = import.meta.env.VITE_API_BASE_URL || 'https://api.inplays.in/';
+const rawApiUrl = import.meta.env.VITE_API_BASE_URL || 'https://zetotv.appzetodemo.com/';
 const API_Base = rawApiUrl.replace(/\/$/, '').endsWith('/api') ? rawApiUrl.replace(/\/$/, '') : `${rawApiUrl.replace(/\/$/, '')}/api`;
 const API_URL = API_Base + '/audio-series';
 

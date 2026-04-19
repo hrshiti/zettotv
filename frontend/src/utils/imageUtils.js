@@ -10,7 +10,7 @@ export const getImageUrl = (path) => {
     }
 
     // Getting the base URL
-    const rawApiUrl = import.meta.env.VITE_API_BASE_URL || 'https://api.inplays.in/api';
+    const rawApiUrl = import.meta.env.VITE_API_BASE_URL || 'https://zetotv.appzetodemo.com/api';
     const serverRoot = rawApiUrl.replace(/\/$/, '').replace(/\/api$/, '');
 
     // Ensure path starts with /

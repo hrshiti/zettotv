@@ -1,5 +1,5 @@
 import axios from 'axios';
-const rawApiUrl = import.meta.env.VITE_API_BASE_URL || 'https://api.inplays.in/api';
+const rawApiUrl = import.meta.env.VITE_API_BASE_URL || 'https://zetotv.appzetodemo.com/api';
 const API_BASE_URL = rawApiUrl.replace(/\/$/, '').endsWith('/api') ? rawApiUrl.replace(/\/$/, '') : `${rawApiUrl.replace(/\/$/, '')}/api`;
 
 const adminTabService = {

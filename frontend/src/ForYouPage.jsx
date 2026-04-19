@@ -7,7 +7,7 @@ import authService from './services/api/authService';
 
 // Initialize Socket outside component to prevent multiple connections
 // Initialize Socket outside component to prevent multiple connections
-const rawApiUrl = import.meta.env.VITE_API_BASE_URL || 'https://api.inplays.in/api';
+const rawApiUrl = import.meta.env.VITE_API_BASE_URL || 'https://zetotv.appzetodemo.com/api';
 // Remove trailing slash if exists and ensure /api suffix
 const API_URL = rawApiUrl.replace(/\/$/, '').endsWith('/api') ? rawApiUrl.replace(/\/$/, '') : `${rawApiUrl.replace(/\/$/, '')}/api`;
 const socket = io(API_URL.replace('/api', ''), {

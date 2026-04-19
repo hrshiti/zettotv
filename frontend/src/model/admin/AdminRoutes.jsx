@@ -22,7 +22,7 @@ const getImageUrl = (path) => {
   // Fallback to the utility if available, or just use the same logic
   let sanitizedPath = String(path).replace(/^undefined\//, '/');
   if (sanitizedPath.startsWith('http://') || sanitizedPath.startsWith('https://')) return sanitizedPath;
-  const rawApiUrl = import.meta.env.VITE_API_BASE_URL || 'https://api.inplays.in/api';
+  const rawApiUrl = import.meta.env.VITE_API_BASE_URL || 'https://zetotv.appzetodemo.com/api';
   const serverRoot = rawApiUrl.replace(/\/$/, '').replace(/\/api$/, '');
   const cleanPath = sanitizedPath.startsWith('/') ? sanitizedPath : `/${sanitizedPath}`;
   return `${serverRoot}${cleanPath}`;
