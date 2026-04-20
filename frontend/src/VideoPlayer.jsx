@@ -52,6 +52,19 @@ export default function VideoPlayer({ movie, episode, onClose, onToggleMyList, o
 
     const videoSrc = getVideoUrl(currentItem);
 
+    // Helper to get Poster URL
+    const getPosterUrl = (item) => {
+        if (!item) return '';
+        // Priority: Episode image/thumbnail -> Movie backdrop -> Movie thumbnail -> Movie poster
+        const url = item.image || item.thumbnail?.url || item.thumbnail?.secure_url || 
+                    movie.backdrop?.url || movie.backdrop?.secure_url || 
+                    movie.thumbnail?.url || movie.thumbnail?.secure_url || 
+                    movie.poster?.url || movie.image;
+        return getImageUrl(url);
+    };
+
+    const posterUrl = getPosterUrl(currentItem);
+
     const isInMyList = myList.some(m => (m._id || m.id) === (movie._id || movie.id));
     const isLiked = likedVideos.some(m => (m._id || m.id) === (movie._id || movie.id));
 
@@ -635,6 +648,7 @@ export default function VideoPlayer({ movie, episode, onClose, onToggleMyList, o
                     <video
                         ref={videoRef}
                         src={videoSrc}
+                        poster={posterUrl}
                         autoPlay
                         playsInline
                         onPause={() => syncProgress()}
@@ -728,6 +742,7 @@ export default function VideoPlayer({ movie, episode, onClose, onToggleMyList, o
                 <video
                     ref={videoRef}
                     src={videoSrc}
+                    poster={posterUrl}
                     autoPlay
                     playsInline
                     onPause={() => syncProgress()}
